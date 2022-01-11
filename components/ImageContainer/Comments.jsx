@@ -4,7 +4,7 @@ import './Comments.css'
 function Comments (props){
     return (
         <ul className="comments">{
-            props.ImageData.comments.map( comment => <Comment comments={comment} /> )
+            props.ImageData.comments.map( comment => <Comment key={comment.id} comments={comment} /> )
         }
          
           {/* <li>And replace them with the real ones</li>

@@ -4,7 +4,10 @@ function ImageContainer (props){
     return (
         <section className="image-container">
             {
-                props.data.map(ImageData => <ImageCart ImageData={ImageData} />)
+                props.data.map(ImageData => <ImageCart 
+                    key={ImageData.id}
+                    likeImage={props.likeImage}
+                     ImageData={ImageData} />)
             }
         
     </section>

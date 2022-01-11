@@ -9,7 +9,9 @@ function ImageCart(props){
         <article className="image-card">
         <Title  ImageData={props.ImageData}/>
         <Image  ImageData={props.ImageData}/>
-        <LikeSection  images={props.ImageData}/>
+        <LikeSection  
+        likeImage={props.likeImage}
+        images={props.ImageData}/>
         <Comments ImageData={props.ImageData} />
       </article>
     )
